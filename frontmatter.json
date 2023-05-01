@@ -1,0 +1,85 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "publishDate",
+          "name": "publishDate",
+          "type": "datetime"
+        },
+        {
+          "title": "excerpt",
+          "name": "excerpt",
+          "type": "string"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "astro",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "post",
+      "path": "[[workspace]]/src/content/post"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.taxonomy.tags": [
+    "Astro",
+    "astro",
+    "blog",
+    "front-end",
+    "markdown",
+    "resources",
+    "tailwind css",
+    "theme",
+    "tools"
+  ],
+  "frontMatter.taxonomy.categories": []
+}

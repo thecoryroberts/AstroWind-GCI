@@ -2,11 +2,16 @@
 publishDate: 2023-01-09T00:00:00Z
 title: Useful tools and resources to create a professional website
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
-image: ~/assets/images/tools.jpg
+image: /favicon.svg
 tags:
   - front-end
   - tools
   - resources
+categories:
+  - Tutorial
+preview: /favicon.svg
+keywords:
+  - Magna
 ---
 
 ## Magna nunc senectus torquent per fusce sapien ligula tempus cra
