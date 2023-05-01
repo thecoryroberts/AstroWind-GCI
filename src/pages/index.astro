@@ -3,7 +3,6 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -15,7 +14,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 const meta = {
   title: SITE.title,
   description: SITE.description,
-  dontUseTitleTemplate: true,
+  dontUseTitleTemplate: false,
 };
 ---
 
@@ -43,9 +42,60 @@ const meta = {
 
   <Note />
 
+  <!-- Content Widget **************** -->
+
+  <Content
+    highlight="📋 About"
+    title="Who are we?"
+
+  image={{
+    src: import('~/assets/images/home/HeartIllustration.png'),
+    alt: 'Vintage Image',
+  }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A little about us...</h3>
+      <p>We are a 501(c)(3) tax-exempt nonprofit organization serving cancer patients in Kanawha County, West Virginia. </p>
+      <p />
+      Our founder and President, a Stage 3 cancer survivor, started this organization in honor of her friend, who passed away shortly after a sudden diagnosis of metastatic cancer. 
+      <p />
+      We at Give Comfort, Inc. understand the mental, physical, and financial burdens caused by cancer.  
+      We are here to make sure that all of our neighbors have the items they need to feel more comfortable while they are on cancer treatment.<br /> 
+      <p>We do not want anyone to go through cancer treatment without the items they need to be more comfortable. We are here. We will give comfort. </p>
+    </Fragment>
+  </Content>
+
+   <!-- Features2 Widget ************** -->
+
+ <Features2
+ title="What We Offer"
+ subtitle="Provides frequently used components for building websites using Tailwind CSS"
+ highlight="🎗️ Services"
+ items={[
+   {
+     title: 'Wishlist Fulfilment',
+     description:
+       'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+     icon: 'flat-color-icons:like',
+   },
+   {
+     title: 'Community Outreach',
+     description:
+       'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
+     icon: 'flat-color-icons:advertising',
+   },
+   {
+     title: 'Donation Driven',
+     description:
+       'Display your product in action and how the Features actually create a solution for your target customer.',
+     icon: 'flat-color-icons:currency-exchange',
+   },
+  
+ ]}
+/>
   <!-- Features Widget *************** -->
 
-  <Features
+<!--  <Features
     highlight="Features"
     title="What you get with AstroWind"
     subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
@@ -63,100 +113,50 @@ const meta = {
             'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
           icon: 'tabler:components',
         },
+        ],
+        [
         {
           title: 'Best Practices',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
           icon: 'tabler:list-check',
         },
-      ],
-      [
         {
-          title: 'Excellent Page Speed',
-          description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
-        },
-        {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'Best Practices',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
+          icon: 'tabler:list-check',
         },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
-        },
-      ],
+        ]
     ]}
-  />
+  /> --->
 
   <!-- Content Widget **************** -->
 
   <Content
-    highlight="Inside template"
-    title="And what's inside? ..."
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-        description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/home/donationbox.jpg'),
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Electric throw blankets',
-      },
-      {
-        title: 'Drymouth lozenges',
-      },
-      {
-        title: 'Chemotherapy approved lotions & ointments',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/home/DonationItems.jpg'),
-      alt: 'Vintage Image',
-    }}
-  />
+  isReversed
+  
+  items={[
+    {
+      title: 'Electric throw blanketst',
+       },
+    {
+      title: 'Drymouth lozenges',
+        },
+    {
+      title: 'Chemotherapy approved lotions & ointments',
+    },
+  ]}
+  image={{
+    src: import('~/assets/images/home/donationitems.jpg'),
+    alt: 'Colorful Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Popular Wishlist Requests</h3>
+  </Fragment>
+</Content>
+  
 
   <!-- Steps Widget ****************** -->
 
@@ -187,88 +187,24 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/creativity.jpg'),
+      src: import('~/assets/images/home/DonateCheerful.jpg'),
       alt: 'Steps image',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
 
- <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+ 
+  <!-- Stats Widget ****************** -->
+
+  <Stats
     items={[
-      {
-        title: 'Headers',
-        description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
-        icon: 'flat-color-icons:todo-list',
-      },
-      {
-        title: 'Content',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'icon-park:page-template',
-      },
+      { name: 'Years Serving Community', value: '1' },
+      { name: 'Applications Recievied', value: '102' },
+      { name: 'Wishlists Fulfilled', value: '57' },
+      { name: 'Comfort Given', value: '❤️' },
     ]}
   />
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <LatestPosts
-    title="Find out more content in our Blog"
-    information={`
-		`}
-    postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
-    ]}
-  />
 
   <!-- FAQs Widget ******************* -->
 
@@ -314,16 +250,7 @@ const meta = {
     ]}
   />
 
-  <!-- Stats Widget ****************** -->
 
-  <Stats
-    items={[
-      { name: 'Years Helping our Community', value: '1' },
-      { name: 'Applications Recievied', value: '102' },
-      { name: 'Wishlists Fulfilled', value: '57' },
-      { name: 'Comfort Given', value: 'Immesurable' },
-    ]}
-  />
 
   <!-- CallToAction Widget *********** -->
 
@@ -342,4 +269,20 @@ const meta = {
       Help us help those who are struggling and could really <br class="hidden md:inline" />use a little comfort.
     </Fragment>
   </CallToAction>
+
+    
+  <!-- HighlightedPosts Widget ******* -->
+
+  <LatestPosts
+    title="Find out more content in our Blog"
+    information={`
+		`}
+    postIds={[
+      'get-started-website-with-astro-tailwind-css.md',
+      'how-to-customize-astrowind-to-your-brand.md',
+      'useful-resources-to-create-websites.md',
+      'astrowind-template-in-depth.md',
+    ]}
+  />
+
 </Layout>
