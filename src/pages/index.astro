@@ -1,11 +1,10 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+//import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
@@ -26,7 +25,7 @@ const meta = {
   <Hero
     callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
     callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    image={{ src: import('~/assets/images/home/DonateCheerful.jpg'), alt: 'Donate & Cheer illustration' }}
   >
     <Fragment slot="title">
       Free template for <span class="hidden lg:inline">create your website <br class="2xl:hidden"/> with</span>
@@ -120,7 +119,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/caos.jpg'),
+      src: import('~/assets/images/home/donationbox.jpg'),
       alt: 'Colorful Image',
     }}
   >
@@ -138,13 +137,13 @@ const meta = {
     isAfterContent
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Electric throw blankets',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: 'Drymouth lozenges',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'Chemotherapy approved lotions & ointments',
       },
       {
         title: 'Per ei quaeque sensibus',
@@ -157,7 +156,7 @@ const meta = {
       },
     ]}
     image={{
-      src: import('~/assets/images/vintage.jpg'),
+      src: import('~/assets/images/home/DonationItems.jpg'),
       alt: 'Vintage Image',
     }}
   />
@@ -165,28 +164,28 @@ const meta = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="How to get Comfort"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Request/Download application</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+          'Submit the Request form or download the form and email it to help@wegivecomfort.org',
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Application Approval</em>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+          'Once your application has been received, GCI staff will consult with your Medical Provider to confirm your eligibility. ',
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Order Fulfilment</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+          'GCI staff will do their best to compile the requested list of comfort items and get them to you prompty.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Enjoy some much needed comfort!',
         icon: 'tabler:check',
       },
     ]}
@@ -198,7 +197,7 @@ const meta = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     highlight="Components"
@@ -258,15 +257,13 @@ const meta = {
         icon: 'icon-park:page-template',
       },
     ]}
-  />
+  /> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
   <LatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-			Astro is a very interesting technology. Thanks.
+    information={`
 		`}
     postIds={[
       'get-started-website-with-astro-tailwind-css.md',
@@ -287,34 +284,34 @@ const meta = {
         {
           question: 'What do I need to start?',
           answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat porttitor felis ac aliquam. Fusce ac augue a felis volutpat condimentum. Mauris elementum a ante sit amet imperdiet.',
         },
         {
           question: 'How to install the Astro + Tailwind CSS template?',
           answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
+            "Morbi lorem mi, semper vitae ipsum eget, dapibus suscipit libero. Suspendisse mattis purus quis ligula commodo, id sodales est eleifend. Suspendisse non sem finibus, imperdiet enim a, egestas lacus. Mauris a consequat mauris, convallis dictum sem",
         },
         {
-          question: "What's something that you don't understand?",
+          question: " Sed ipsum risus, mollis et odio vel, semper lacinia leo. Curabitur sem nulla, finibus a elit a, molestie mollis nun?",
           answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+            "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec rhoncus mi sed ligula egestas, vitae dictum risus sodales.",
         },
       ],
       [
         {
-          question: "What's an example of when you changed your mind?",
+          question: "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
           answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+            "Quisque at venenatis ex. Suspendisse porta rhoncus ipsum, non vulputate urna ultricies id. Ut suscipit felis elit, a cursus ligula tempor a.",
         },
         {
-          question: 'What is something that you would like to try again?',
+          question: 'Praesent efficitur maximus bibendum?',
           answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+            "Aliquam feugiat massa at ante eleifend venenatis. Sed in nisl aliquam, eleifend velit non, dignissim neque. Duis ut ex odio.",
         },
         {
           question: 'If you could only ask one question to each person you meet, what would that question be?',
           answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+            "Ut eget nulla condimentum, molestie metus euismod, finibus elit. Sed eu euismod nibh. Morbi suscipit mauris magna, a malesuada eros dictum id. Ut sed pulvinar metus, sit amet mollis ante.",
         },
       ],
     ]}
@@ -324,10 +321,10 @@ const meta = {
 
   <Stats
     items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
+      { name: 'Years Helping our Community', value: '1' },
+      { name: 'Applications Recievied', value: '102' },
+      { name: 'Wishlists Fulfilled', value: '57' },
+      { name: 'Comfort Given', value: 'Immesurable' },
     ]}
   />
 
@@ -341,12 +338,11 @@ const meta = {
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Give <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Comfort, Inc is powered by donations</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Help us help those who are struggling and could really <br class="hidden md:inline" />use a little comfort.
     </Fragment>
   </CallToAction>
 </Layout>
