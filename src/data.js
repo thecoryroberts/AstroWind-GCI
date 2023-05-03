@@ -28,11 +28,11 @@ export const headerData = {
         },
         {
           text: 'Wishlists',
-          href: 'wishlist',
+          href: getPermalink('/wishlist'),
         },
         {
           text: 'About us',
-          href: 'about',
+          href: getPermalink('/about'),
         },
         {
           text: 'Contact',
