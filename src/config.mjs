@@ -7,7 +7,7 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'GCI — Give Comfort, Inc.',
+  title: 'Give Comfort, Inc.',
   description:
     '🚀 Charleston, WV non-profit uniting a community with comfort.',
   defaultImage: defaultImage,
