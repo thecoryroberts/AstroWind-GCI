@@ -2,7 +2,7 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
-import Note from '~/components/widgets/Note.astro';
+//import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -22,12 +22,12 @@ const meta = {
    <!-- Hero2 Widget ******************* -->
 
    <Hero2
-   callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
+   callToAction={{ text: 'Donate', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
    callToAction2={{ text: 'Learn more', href: '#features' }}
    image={{ src: import('~/assets/images/donate-cheerful.jpg'), alt: 'AstroWind Hero Image' }}
  >
    <Fragment slot="title">
-     What is <span class="hidden lg:inline">Give</span>
+     <span class="hidden lg:inline">Give</span>
      <span class="text-accent dark:text-white highlight"> Comfort</span>, Inc.
    </Fragment>
 
@@ -41,9 +41,6 @@ const meta = {
    </Fragment>
  </Hero2>
 
-  <!-- Note Widget ******************* -->
-
-  <Note />
 
   <!-- Content Widget **************** -->
 
@@ -59,11 +56,12 @@ const meta = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A little about us...</h3>
       <p>We are a 501(c)(3) tax-exempt nonprofit organization serving cancer patients in Kanawha County, West Virginia. </p>
-      <p />
-      Our founder and President, a Stage 3 cancer survivor, started this organization in honor of her friend, who passed away shortly after a sudden diagnosis of metastatic cancer. 
-      <p />
-      We at Give Comfort, Inc. understand the mental, physical, and financial burdens caused by cancer.  
-      We are here to make sure that all of our neighbors have the items they need to feel more comfortable while they are on cancer treatment.<br /> 
+      <br />
+      <p>Our founder and President, a Stage 3 cancer survivor, started this organization in honor of her friend, who passed away shortly after a sudden diagnosis of metastatic cancer.</p> 
+      <br />
+      <p>We at Give Comfort, Inc. understand the mental, physical, and financial burdens caused by cancer.  
+      We are here to make sure that all of our neighbors have the items they need to feel more comfortable while they are on cancer treatment.</p>
+      <br /> 
       <p>We do not want anyone to go through cancer treatment without the items they need to be more comfortable. We are here. We will give comfort. </p>
     </Fragment>
   </Content>
