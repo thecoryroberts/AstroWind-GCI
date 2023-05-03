@@ -32,7 +32,7 @@ export const headerData = {
         },
         {
           text: 'About us',
-          href: ('#'),
+          href: ('#about'),
         },
         {
           text: 'Contact',
