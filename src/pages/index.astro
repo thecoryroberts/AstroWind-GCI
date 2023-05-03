@@ -1,7 +1,7 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero2.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -24,7 +24,7 @@ const meta = {
    <Hero2
    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
    callToAction2={{ text: 'Learn more', href: '#features' }}
-   image={{ src: import('~/src/assets/images/home/HeartIllustration.png'), alt: 'AstroWind Hero Image' }}
+   image={{ src: import('~/assets/images/home/HeartIllustration.png'), alt: 'AstroWind Hero Image' }}
  >
    <Fragment slot="title">
      Free template for <span class="hidden lg:inline">create your website <br />with</span>
