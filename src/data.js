@@ -27,12 +27,12 @@ export const headerData = {
           href: '#',
         },
         {
-          text: 'Pricing',
-          href: '#',
+          text: 'Wishlists',
+          href: 'wishlist',
         },
         {
           text: 'About us',
-          href: '#',
+          href: 'about',
         },
         {
           text: 'Contact',

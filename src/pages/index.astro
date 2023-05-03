@@ -1,10 +1,11 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Welcome from '~/components/widgets/Hero2.astro';
 //import Note from '~/components/widgets/Note.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
+import WishList from '~/components/widgets/Features2.astro';
+import HowTo from '~/components/widgets/Steps.astro';
+import About from '~/components/widgets/Content.astro';
 import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
@@ -21,7 +22,7 @@ const meta = {
 <Layout {meta}>
    <!-- Hero2 Widget ******************* -->
 
-   <Hero2
+   <Welcome
    callToAction={{ text: 'Donate', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
    callToAction2={{ text: 'Learn more', href: '#features' }}
    image={{ src: import('~/assets/images/comforting-hand.jpg'), alt: 'AstroWind Hero Image' }}
@@ -35,12 +36,12 @@ const meta = {
      <span class="hidden sm:inline">
        <span class="font-semibold">GCI</span> is a non-profit organization that provides financial assistance, service coordination and supportive care to cancer patients throughout Southern West Virginia.We focus on the daily living challenges and out-of-pocket expenses that become a burden for many families during treatment. We also provide a variety of free services and supplies to local cancer fighters to ensure they feel the embrace of our community on their journey toward healing. We are here. We will give comfort.</span>
 </Fragment>
- </Hero2>
+   </Welcome>
 
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <About
     highlight="📋 About"
     title="Who are we?"
 
@@ -60,11 +61,11 @@ const meta = {
       <br /> 
       <p>We do not want anyone to go through cancer treatment without the items they need to be more comfortable. We are here. We will give comfort. </p>
     </Fragment>
-  </Content>
+  </About>
 
    <!-- Features2 Widget ************** -->
 
- <Features2
+ <WishList
  title="Providing Patient Comfort"
  subtitle="The following are just a frew popular items we have carefully selected to provide comfort, relief and encouragement to new patients facing the fears and uncertainty of chemotherapy or radiation therapy treatment."
  highlight="🎁 Wish Lists"
@@ -203,7 +204,6 @@ const meta = {
 
   <Content
   isReversed
-  
   items={[
     {
       title: 'Electric throw blanketst',
@@ -228,7 +228,7 @@ const meta = {
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
+  <HowTo 
     title="How to get Comfort"
     items={[
       {
