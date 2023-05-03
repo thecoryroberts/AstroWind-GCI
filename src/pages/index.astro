@@ -1,7 +1,7 @@
 ---
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import Hero from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -19,24 +19,27 @@ const meta = {
 ---
 
 <Layout {meta}>
-  <!-- Hero Widget ******************* -->
+   <!-- Hero2 Widget ******************* -->
 
-  <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/home/DonateCheerful.jpg'), alt: 'Donate & Cheer illustration' }}
-  >
-    <Fragment slot="title">
-      Free template for <span class="hidden lg:inline">create your website <br class="2xl:hidden"/> with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
-    </Fragment>
+   <Hero2
+   callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
+   callToAction2={{ text: 'Learn more', href: '#features' }}
+   image={{ src: import('~/src/assets/images/home/HeartIllustration.png'), alt: 'AstroWind Hero Image' }}
+ >
+   <Fragment slot="title">
+     Free template for <span class="hidden lg:inline">create your website <br />with</span>
+     <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+   </Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="block mb-1 font-semibold">We are here to make sure that all of our neighbors have the items they need to feel more comfortable while they are on cancer treatment. We do not want anyone to go through cancer treatment without the items they need to be more comfortable. We are here. We will give comfort. </span>
-        </span>
-    </Fragment>
-  </Hero>
+   <Fragment slot="subtitle">
+     <span class="hidden sm:inline">
+       <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
+       Tailwind CSS.</span
+     >
+     <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
+     Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+   </Fragment>
+ </Hero2>
 
   <!-- Note Widget ******************* -->
 
