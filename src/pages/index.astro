@@ -27,7 +27,7 @@ const meta = {
    callToAction2={{ text: 'Learn more', href: '#features' }}
    image={{ src: import('~/assets/images/comforting-hand.jpg'), alt: 'AstroWind Hero Image' }}
  >
-   <Fragment slot="title">
+   <Fragment slot="title" id="welcome">
      <span class="hidden lg:inline">Give</span>
      <span class="text-accent dark:text-white highlight"> Comfort</span>, Inc.
    </Fragment>
@@ -50,7 +50,7 @@ const meta = {
     alt: 'Vintage Image',
   }}
   >
-    <Fragment slot="content">
+    <Fragment slot="content" id="about">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">A little about us...</h3>
       <p>We are a 501(c)(3) tax-exempt nonprofit organization serving cancer patients in Kanawha County, West Virginia. </p>
       <br />
@@ -220,7 +220,7 @@ const meta = {
     alt: 'Colorful Image',
   }}
 >
-  <Fragment slot="content">
+  <Fragment slot="content" id="content">
     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Popular Wishlist Requests</h3>
   </Fragment>
 </Content>
