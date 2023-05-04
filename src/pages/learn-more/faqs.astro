@@ -1,0 +1,67 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+//import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import { headerData } from '~/data';
+
+const meta = {
+  title: "FAQs",
+};
+---
+
+<Layout {meta}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      showRssFeed
+      showToggleTheme
+      position="left"
+    />
+  </Fragment>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
+    highlight="FAQs"
+    items={[
+      [
+        {
+          question: 'What do I need to start?',
+          answer:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat porttitor felis ac aliquam. Fusce ac augue a felis volutpat condimentum. Mauris elementum a ante sit amet imperdiet.',
+        },
+        {
+          question: 'How to install the Astro + Tailwind CSS template?',
+          answer:
+            "Morbi lorem mi, semper vitae ipsum eget, dapibus suscipit libero. Suspendisse mattis purus quis ligula commodo, id sodales est eleifend. Suspendisse non sem finibus, imperdiet enim a, egestas lacus. Mauris a consequat mauris, convallis dictum sem",
+        },
+        {
+          question: " Sed ipsum risus, mollis et odio vel, semper lacinia leo. Curabitur sem nulla, finibus a elit a, molestie mollis nun?",
+          answer:
+            "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec rhoncus mi sed ligula egestas, vitae dictum risus sodales.",
+        },
+      ],
+      [
+        {
+          question: "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
+          answer:
+            "Quisque at venenatis ex. Suspendisse porta rhoncus ipsum, non vulputate urna ultricies id. Ut suscipit felis elit, a cursus ligula tempor a.",
+        },
+        {
+          question: 'Praesent efficitur maximus bibendum?',
+          answer:
+            "Aliquam feugiat massa at ante eleifend venenatis. Sed in nisl aliquam, eleifend velit non, dignissim neque. Duis ut ex odio.",
+        },
+        {
+          question: 'If you could only ask one question to each person you meet, what would that question be?',
+          answer:
+            "Ut eget nulla condimentum, molestie metus euismod, finibus elit. Sed eu euismod nibh. Morbi suscipit mauris magna, a malesuada eros dictum id. Ut sed pulvinar metus, sit amet mollis ante.",
+        },
+      ],
+    ]}
+  />
+</Layout>

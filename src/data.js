@@ -39,8 +39,8 @@ export const headerData = {
           href: '#',
         },
         {
-          text: 'FAQ',
-          href: '#',
+          text: 'FAQs',
+          href: getPermalink('learn-more/faqs'),
         },
         {
           text: 'Terms',
