@@ -20,22 +20,26 @@ export const headerData = {
     //   ],
     // },
     {
-      text: 'Pages',
+      text: 'Learn More',
       links: [
+        {
+          text: 'Mission Statement',
+          href: '#',
+        },
         {
           text: 'Features',
           href: '#',
         },
         {
           text: 'Wishlists',
-          href: ('#'),
+          href: '#',
         },
         {
           text: 'About us',
-          href: ('#'),
+          href: '#',
         },
         {
-          text: 'Contact',
+          text: 'FAQ',
           href: '#',
         },
         {
@@ -49,7 +53,41 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
+      text: 'Get Help',
+      links: [
+        {
+          text: 'Apply for Comfort',
+          href: getPermalink('/terms'),
+        },
+        {
+          text: 'Resources',
+          href: getPermalink('/terms'),
+        },
+      ],
+    },
+    {
+      text: 'Get Involved',
+      links: [
+        {
+          text: 'Donate',
+          href: getPermalink('/terms'),
+        },
+        {
+          text: 'Current Wishlists',
+          href: '#',
+        },
+      ],
+    },
+    {
+      text: 'Events',
+      href: '#',
+    },
+    {
+      text: 'Contact',
+      href: '#',
+    },
+    {
+      text: 'Donate',
       href: '#',
     },
     {
@@ -57,11 +95,9 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-  actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
-  ],
+  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
 };
-  
+
 export const footerData = {
   links: [
     {
@@ -118,7 +154,6 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-
   ],
   // footNote: `
   //   <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
