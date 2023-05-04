@@ -36,7 +36,7 @@ export const headerData = {
         },
         {
           text: 'FAQs',
-          href: getPermalink('/learn-more/faqs'),
+          href: ('/learn-more/faqs'),
         },
         {
           text: 'Terms',
@@ -53,11 +53,11 @@ export const headerData = {
       links: [
         {
           text: 'Apply for Comfort',
-          href: getPermalink('/terms'),
+          href: getPermalink('/learn-more/terms'),
         },
         {
           text: 'Resources',
-          href: getPermalink('/terms'),
+          href: getPermalink('/learn-more/terms'),
         },
       ],
     },
@@ -76,15 +76,15 @@ export const headerData = {
     },
     {
       text: 'Events',
-      href: getPermalink('/events'),   
+      href: ('/events'),   
     },
     {
       text: 'Contact',
-      href: getPermalink('/contact'),   
+      href: ('/contact'),   
     },
     {
       text: 'Donate',
-      href: getPermalink('/get-involved/donate'),
+      href: ('/get-involved/donate'),
     },
     {
       text: 'Blog',
