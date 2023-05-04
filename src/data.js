@@ -66,7 +66,7 @@ export const headerData = {
       links: [
         {
           text: 'Donate',
-          href: getPermalink('/terms'),
+          href: getPermalink('/get-involved/donate'),
         },
         {
           text: 'Current Wishlists',
@@ -76,15 +76,15 @@ export const headerData = {
     },
     {
       text: 'Events',
-      href: '#',
+      href: getPermalink('/events'),   
     },
     {
       text: 'Contact',
-      href: '#',
+      href: getPermalink('/contact'),   
     },
     {
       text: 'Donate',
-      href: '#',
+      href: getPermalink('/get-involved/donate'),
     },
     {
       text: 'Blog',
