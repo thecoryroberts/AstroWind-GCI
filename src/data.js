@@ -27,10 +27,6 @@ export const headerData = {
           href: '#',
         },
         {
-          text: 'Features',
-          href: '#',
-        },
-        {
           text: 'Wishlists',
           href: '#',
         },
@@ -40,15 +36,15 @@ export const headerData = {
         },
         {
           text: 'FAQs',
-          href: getPermalink('learn-more/faqs'),
+          href: getPermalink('/learn-more/faqs'),
         },
         {
           text: 'Terms',
-          href: getPermalink('/terms'),
+          href: getPermalink('/learn-more/terms'),
         },
         {
           text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/learn-more/privacy'),
         },
       ],
     },
